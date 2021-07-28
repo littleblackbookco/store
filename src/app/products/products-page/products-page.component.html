@@ -1,2 +1,12 @@
 <a routerLink="/cart">View Cart</a>
 <p>products-page works!</p>
+<div class="container">
+  <div
+    *ngFor="let product of products$ | async"
+    class="product"
+    routerLink="{{ product.id }}"
+  >
+    <div>Product picture</div>
+    <div class="title">{{ product.title }}</div>
+  </div>
+</div>

@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  gap: 1rem;
+}
+
+.product {
+  cursor: pointer;
+  padding: 5px;
+  border: 1px darkgray solid;
+  border-radius: 5px;
+  margin: auto;
+  height: 200px;
+  flex: 0 0 32%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  transition-property: transform;
+  transition: 0.25s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+.product:hover {
+  transform: scale(101%);
+}
+
+.title {
+  border-top: 1px darkgray solid;
+}
